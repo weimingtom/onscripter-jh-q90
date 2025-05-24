@@ -35,3 +35,10 @@ CC = /home/wmt/work_q90/arm-buildroot-linux-musleabi_sdk-buildroot/bin/arm-build
 LD = /home/wmt/work_q90/arm-buildroot-linux-musleabi_sdk-buildroot/bin/arm-buildroot-linux-musleabi-g++ -o
 ```
 * make GCWZERO=1 clean && make GCWZERO=1 -j8
+
+## How to get MiyooCFW musl toolchains and install the MiyooCFW OS (need a new tf card)    
+* miyoo-toolchain-v2.0.0-arm-buildroot-linux-musleabi_sdk-buildroot.tar.gz  
+from https://github.com/MiyooCFW/toolchain/releases/tag/v2.0.0  
+I just uncompress it, no need to execute relocate-sdk.sh  
+* MiyooCFW-2.0.0-Beta-7fc5140.zip/miyoo-cfw-2.0.0-gb0130e40_musl-BETA.img  
+from https://github.com/TriForceX/MiyooCFW/releases  
