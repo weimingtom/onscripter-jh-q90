@@ -1,5 +1,8 @@
 # onscripter-jh-q90
-[WIP] My ONScripter-jh Q90 with MiyooCFW musl and NxHope port
+[WIP] My ONScripter-jh Q90 with MiyooCFW musl and NxHope port  
+NxHope is the stock OS (official factory firmware), and stable.   
+MiyooCFW musl version need to be installed manually, and not stable,   
+I don't use uclibc version because uclibc gcc toolchains not provided.  
 
 ## Ref  
 * https://github.com/weimingtom/q90_playground  
