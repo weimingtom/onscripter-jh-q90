@@ -19,3 +19,19 @@ miyoocfw可能只能通过add link操作在桌面添加快捷方式来运行，
 * https://github.com/weimingtom/q90_playground  
 * https://www.cnblogs.com/jeason1997/p/17849600.html   
 开源掌机程序编译 - JeasonBoy - 博客园  
+
+## How to build for PC debugging  
+* Xubuntu 20.04 64bit
+* sudo apt-get install libsdl-dev libsdl-image1.2-dev libsdl-ttf2.0-dev libsdl-mixer1.2-dev libbz2-dev libfreetype-dev
+* make GCWZERO=0 clean && make GCWZERO=0 -j8
+* ./onscripter  
+
+## How to build for Q90  
+* Xubuntu 20.04 64bit
+* Modify Makefile to point to the cross compiling toolchain  
+```
+SYSROOT?=/home/wmt/work_q90/arm-buildroot-linux-musleabi_sdk-buildroot/arm-buildroot-linux-musleabi/sysroot  
+CC = /home/wmt/work_q90/arm-buildroot-linux-musleabi_sdk-buildroot/bin/arm-buildroot-linux-musleabi-g++
+LD = /home/wmt/work_q90/arm-buildroot-linux-musleabi_sdk-buildroot/bin/arm-buildroot-linux-musleabi-g++ -o
+```
+* make GCWZERO=1 clean && make GCWZERO=1 -j8
