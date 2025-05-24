@@ -10,6 +10,9 @@ I don't use uclibc version because uclibc gcc toolchains not provided.
 需要加上全局环境变量SDL_NOMOUSE=1，并且可以直接在
 文件管理器commander中运行sh文件。
 具体我会记录到gh上
+
+miyoocfw可能只能通过add link操作在桌面添加快捷方式来运行，
+直接用文件管理器commander运行sh文件可能会运行不了
 ```
 
 ## Ref  
